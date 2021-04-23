@@ -1,15 +1,14 @@
 .sidenav {
   box-shadow: 1px 0px 25px rgb(219, 219, 219);
-    
   text-align: lefcet;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 20.2%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  width: 20.2%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255); /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -21,15 +20,16 @@ h1 {
 hr {
   margin-bottom: 38;
   width: 75%;
-  background-color:#F5F5F5; 
-  border-color:transparent;
+  background-color: #F5F5F5;
+  border-color: transparent;
   height: 4px;
   border-radius: 5px;
- 
+
 }
 
 /* The navigation menu links */
-.dashButton , .signOut {
+.dashButton,
+.signOut {
   background-color: #ffffff;
   border-radius: 50px;
   padding: 12px 61px;
@@ -66,32 +66,309 @@ hr {
   color: red;
 }
 
-.dashButton:hover, .signOut:hover  {
+.dashButton:hover,
+.signOut:hover {
   color: #A170F1;
   background-color: #ffffff;
 }
 
 /* Style page content */
 .main {
-  margin-left: 20.2%; /* Same as the width of the sidebar */
+  margin-left: 20.2%;
+  /* Same as the width of the sidebar */
+  margin-top: 94.5px;
   padding: 0px 10px;
 }
 
+.searchbar {
+  left: 438;
+  position: fixed;
+  display: flex;
+  width: 34.6%;
+  border: 2px solid #F8F8F8;
+  border-radius: 50px;
+  background-color: #F8F8F8;
+}
+
 input[type=text] {
-  width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
+  border: 2px solid #F8F8F8;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: #F8F8F8;
   background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  padding: 13px 0px 13px 80px;
+
 }
 
 input[type=text]:focus {
+  /* width: 45.78%; */
+  outline: none;
+
+}
+
+.search {
+  padding: 13px 0px 13px 75px;
+  margin-left: 175px;
+  color: #696868;
+  cursor: pointer;
+}
+
+.settingButton {
+  position: fixed;
+  right: 0;
+  background-color: #A170F1;
+  border: none;
+  padding: 17.5px 55px 17.5px 35px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  cursor: pointer;
+}
+
+.header {
+  margin-left: 22.5%;
+  display: flex;
+  margin-top: 48px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  /* justify-content:space-between  ; */
+  grid-gap: 35px;
+  margin: 39px 35px 69px 35px;
+}
+
+.multi-container {
+  width: 470px;
+}
+
+.hi-container {
+  padding: 45px 45px 0px 45px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #FED958;
+}
+
+.hi-container h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  margin-left: 10;
+}
+
+.mess-container {
+  text-align: center;
+  color: #696868;
+  height: 735px;
+  width: 490px ;
+  overflow: auto;
+  border-radius: 20px;
+  border: 8px solid #F5F5F5;
+}
+
+.mess-container h1, .att-container h1 {
+  margin: 60px auto 0px auto;
+  color: black;
+
+}
+
+.mess-container p {
+  margin: 25px auto 32px auto;
+}
+
+.mess-container h4 {
+  margin: 0px auto 0px auto;
+}
+
+/* .card {
+  display: fl ;
+  justify-content: center;
+  overflow: auto;
+  background-color: #A170F1;
+} */
+
+.cal-container {
+  margin-top: 35px;
+  border-radius: 20px;
+  border: 8px solid #F5F5F5;
+}
+
+.att-container {
+  text-align: center;
+  color: #696868;
+  height: 735px;
+  /* width: 485px; */
+  border-radius: 20px;
+  border: 8px solid #F5F5F5;
+  margin-right: 39px;
+}
+
+.card {
+  display: inline-flex  ;
+  margin: 24px 17px 24px 17px;
+  background-color: white;
+  overflow: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 2px #dfdfdf33, 0 6px 20px 0 #dfdfdf33;
+}
+
+.main-image  {
+  padding: 25px 12px 25px 12px;
+
+}
+
+.arrow-image {
+  padding: 100px 24px 100px 24px;
+  cursor: pointer;
+}
+
+.card .details {
+  padding: 50px 15px 0px 15px;
+  text-align: left;
+}
+
+.card:hover{
+
+  box-shadow: 0 4px 8px 2px #e6d6ff, 0 6px 20px 0px #dfdfdf33;
+
+}
+
+/*  */
+/*  */
+/*  */
+
+.container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.calendar {
+	border-radius: 4px;
+	height: 501px;
+  perspective: 1000;
+	transition: .9s;
+	transform-style: preserve-3d;
+	width: 100%;
+}
+
+.week-days {
+  list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	padding: 30px 40px;
+}
+
+.weeks {
+	display: flex;
+	flex-direction: column;
+	padding: 0 37px;
+}
+
+.weeks div {
+	display: flex;
+	font-size: 1.2em;
+	font-weight: 300;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.last-month {
+	opacity: .3;
+}
+
+.weeks span {
+	padding: 10px;
+}
+
+.weeks span.active {
+	background: #A170F1;
+	border-radius: 50%;
+  color: white;
+}
+
+.weeks span:not(.last-month):hover {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+table {
   width: 100%;
+  padding-top: 22px;
+}
+
+h5{
+  font-size: 17.87px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 17.87px;
+}
+
+.vl {
+  border-left: 6px solid #F5F5F5;
+  height: 293px;
+}
+
+.division {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sst {
+  height: 30px;
+  width: 150px;
+  background-color: #A170F1;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 300px;
+  left: 520px;
+  text-align: center;
+  color: white;
+  padding-top: 6px;
+}
+
+.math {
+  height: 30px;
+  width: 150px;
+  background-color: #EA4335;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 250px;
+  left: 570px;
+  text-align: center;
+  color: white;
+  padding-top: 6px;
+}
+
+.english {
+  height: 30px;
+  width: 150px;
+  background-color: #FFDB5A;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 200px;
+  left: 530px;
+  text-align: center;
+  color: white;
+  padding-top: 6px;
+}
+
+.science {
+  height: 30px;
+  width: 150px;
+  background-color: #37BD5B;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 150px;
+  left: 600px;
+  text-align: center;
+  color: white;
+  padding-top: 6px;
 }
