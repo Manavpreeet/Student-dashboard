@@ -1,16 +1,82 @@
 <html lang="en">
 
 <head>
-    <%- include ('partials/imports'); %> 
+    <%- include ('partials/imports'); %>
 </head>
 
 <body style="font-family: 'Nunito', sans-serif;">
 
     <%- include('partials/navBar'); %>
-    <%- include ('partials/header'); %> 
+    <%- include ('partials/header'); %>
 
     <div class="main">
+        <div class="contain">
+            <div class="main-con">
+                <ul>
+                    <li id="subject" class="underline ">Subjects</li>
+                    <li>Assignments</li>
+                    <li>Study Material</li>
+                </ul>
+                <div class="content">
+                    <h2>Subjects</h2>
+                    <p>Join now and enjoy learnign with great experience</p>
+                    <div>
+                        <div class="card">
+                            <img src="images/art-project.png" class="main-image" style="height: 150px; width: 150px;" alt="project image">
+                            <div class="details">
+                                <h2>Art</h2>
+                                <p>Date-02 april 2021</p>
+                            </div>
+                            <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                        </div>
+                        <div class="card">
+                            <img src="images/art-project.png" class="main-image" style="height: 150px; width: 150px;" alt="project image">
+                            <div class="details">
+                                <h2>Art</h2>
+                                <p>Date-02 april 2021</p>
+                            </div>
+                            <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                        </div>
+                        <div class="card">
+                            <img src="images/art-project.png" class="main-image" style="height: 150px; width: 150px;" alt="project image">
+                            <div class="details">
+                                <h2>Art</h2>
+                                <p>Date-02 april 2021</p>
+                            </div>
+                            <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                        </div>
+                        <div class="card">
+                            <img src="images/art-project.png" class="main-image" style="height: 150px; width: 150px;" alt="project image">
+                            <div class="details">
+                                <h2>Art</h2>
+                                <p>Date-02 april 2021</p>
+                            </div>
+                            <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-con">
+                <img src="images/classImg.png" alt="">
+            </div>
+
+        </div>
     </div>
+
+    <script>
+        document.getElementById("subject").onclick = function () {
+            assignmentOpen()
+        };
+
+        function assignmentOpen() {
+            document.getElementById("subject").style.color = "black";
+            document.getElementById("hi").classList.add("hidden");
+            document.getElementById("bye").classList.remove("hidden")
+        }
+    </script>
+
 
 </body>
 

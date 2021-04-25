@@ -372,3 +372,73 @@ h6 {
   color: white;
   padding-top: 6px;
 }
+
+.contain {
+  display: flex;
+  border-radius: 20px;
+}
+
+.main-con {
+  margin-left: 25px;
+  text-align: center;
+  margin-top: 55px;
+  width: 64.5%;
+  height: 744px;
+  
+}
+
+.image-con {
+  /* justify-items: center; */
+  /* width: 24%; */
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #F5B4D6;
+}
+
+.content {
+  border: 8px solid #F5F5F5;
+  border-radius: 20px;
+}
+
+.image-con img {
+  margin-top: 50%;
+}
+
+.contain h2 {
+  font-size: 36px;
+}
+
+.contain p {
+  font-size: 18px;
+  color: #6B6767;
+}
+
+.contain ul{
+  display: flex;
+  list-style-type: none;
+  font-size: 24;
+}
+
+.contain li {
+  margin-right: 100px;
+  color: #A3A3A3;
+
+}
+.hidden{
+  display: none;
+}
+
+.underline {
+  background-image: linear-gradient(#FE6EB3, #FE6EB3);
+  background-position: bottom center; /*Adjust the background-position to move the line*/
+  background-size: 80% 4px; /*Adjust the background size to control length and height*/
+  background-repeat: no-repeat;
+  padding-bottom: 5px; /* this can also control the position */
+}
+
+.select {
+  color: black;
+}
