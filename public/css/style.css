@@ -442,3 +442,151 @@ h6 {
 .select {
   color: black;
 }
+
+.date-sheet {
+  width: 50%;
+}
+
+.container-one {
+  display: flex;
+}
+
+.date-sheet {
+  text-align: center;
+  border: 8px solid #F5F5F5;
+  border-radius: 20px;
+  margin-right: 50px;
+  overflow: scroll;
+  width: 989px;
+
+}
+
+.exam-container {
+  margin-left: 36px ;
+}
+
+.date-sheet table {
+  /* margin-left: 42px; */
+  border-collapse: collapse;
+  /* width: ; */
+}
+
+td {
+  border-top: 1px solid #F8F8F8;
+  border-bottom: 1px solid #F8F8F8;
+  font-size: 16px;
+  text-align: center;
+  padding: 8 40 8 40px;
+  
+}
+
+tr:hover {
+  box-shadow: 0 4px 8px 2px #dfdfdf33, 0 6px 20px 0 #dfdfdf33;
+
+}
+
+.container-two {
+  margin-top: 50px;
+
+  display: flex;
+}
+
+.days {
+  position: absolute;
+  top:32vh;
+  left: 700px;
+}
+
+.timetable {
+  position: relative;
+  z-index: -1;
+  top: 50px;
+}
+
+.axis {
+  position: relative;
+  right: 14%;  
+}
+
+.abcd {
+  position: relative;
+  right: 61%;
+  top: -1.7rem;
+}
+
+.month {
+  position: relative;
+  right: 25%;
+}
+
+.bar1 {
+  position: relative;
+  right: 58.5%;
+  z-index: -1;
+}
+
+.bar2 {
+  position: relative;
+  right: 55.5%;
+  z-index: -1;
+}
+
+.bar3 {
+  position: relative;
+  right: 51.7%;
+  z-index: -1;
+}
+
+.bar4 {
+  position: relative;
+  right: 47.7%;
+  z-index: -1;
+}
+
+.bar5 {
+  position: relative;
+  right: 43.7%;
+  z-index: -1;
+}
+
+.bar6 {
+  position: relative;
+  right: 40.2%;
+  z-index: -1;
+}
+
+.bar7 {
+  position: relative;
+  right: 37.2%;
+  z-index: -1;
+}
+
+.sub {
+  position: relative;
+  top: -17rem;
+  right: 10rem;
+}
+
+progress {
+  width: 20rem;
+  margin: 24px 0 18px 0;
+}
+
+
+        /* For Firefox */
+        progress::-moz-progress-bar {
+          background: #A170F1;
+
+      }
+
+      /* For Chrome or Safari */
+      progress::-webkit-progress-value {
+          background: #A170F1;
+      }
+
+      /* For IE10 */
+      progress {
+          background: #A170F1;
+
+
+      }

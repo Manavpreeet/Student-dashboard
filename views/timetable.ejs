@@ -1,16 +1,73 @@
 <html lang="en">
 
 <head>
-    <%- include ('partials/imports'); %> 
+    <%- include ('partials/imports'); %>
 </head>
 
 <body style="font-family: 'Nunito', sans-serif;">
 
     <%- include('partials/navBar'); %>
-    <%- include ('partials/header'); %> 
+    <%- include ('partials/header'); %>
 
     <div class="main">
-        <h1>Hello</h1>
+        <div class="contain">
+            <div class="main-con" style="margin-top: 0px;">
+                <h2>Timetable</h2>
+                <p>Keep Track</p>
+                <div class="content" style="height: 650px;">
+
+                    <img class="days" src="images/days.png" alt="">
+                    <img class="time" src="images/time.png" alt="">
+                    <img class="timetable" src="images/timetable.png" alt="">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mess-container" style="position: absolute; top: 150; right: 0; border: none;" >
+            
+            <h1>Calendar</h1>
+            <p>Don't just work enjoy it!</p>
+            
+            <div>
+                <div class="card">
+                    <img src="images/art-project.png" class="main-image" style="height: 150px; width: 150px;" alt="project image">
+                    <div class="details">
+                        <h2>Art</h2>
+                        <p>Date-02 april 2021</p>
+                    </div>
+                    <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                </div>
+
+                <div class="card">
+                    <img src="images/conputer-project.png" class="main-image" style="height: 120px; width: 150px; padding-top: 55px;" alt="project image">
+                    <div class="details">
+                        <h2>Computer</h2>
+                        <p>Date-02 april 2021</p>
+                    </div>
+                    <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                </div>
+
+                <div class="card">
+                    <img src="images/science-project.png" class="main-image" style="height: 150px; width: 150px;" alt="project image">
+                    <div class="details">
+                        <h2>Science</h2>
+                        <p>Date-02 april 2021</p>
+                    </div>
+                    <img src="images/arrow.png" class="arrow-image" style="height: 10px; width: 20px;" alt="arrow image">
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="image-con" style=" background-color: #FBF6EF; width: 495px;">
+            
+            <!-- <img src="images/classImg.png" style="z-index: -10000;" alt=""> -->
+          
+        </div>
     </div>
 
 </body>
